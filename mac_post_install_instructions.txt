@@ -1,0 +1,6 @@
+# to create docker User Group
+sudo dscl . -create /Groups/docker
+
+# to add my username to the docker user group
+sudo dseditgroup -o edit -a tcampbell -t user docker
+
